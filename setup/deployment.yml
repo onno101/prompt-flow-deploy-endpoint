@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: blue
+endpoint_name: csv-chat-gh-action-02
+model: 
+   path: ../shared/Users/onvander/promptflow/questions-on-csv
+environment: azureml:promptflow_13e75b24d3ecb1de88153ddc34e30592:1
+  # inference config is used to build a serving container for online deployments
+instance_type: Standard_F2s_v2
+instance_count: 1
+environment_variables:
+  PROMPTFLOW_CONNECTION_PROVIDER: "onvanderai826500209528_aoai"

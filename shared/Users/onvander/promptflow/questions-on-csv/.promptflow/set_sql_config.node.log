@@ -1,0 +1,4 @@
+2024-05-03 15:25:38 +0000   30852 execution.flow     INFO     Executing node set_sql_config. node run id: f454fa2d-1950-45c3-a173-26f3465a4d83_set_sql_config_34643db3-962a-42a6-905d-9ea4363a7d0d
+2024-05-03 15:25:38 +0000   30852 execution.flow     INFO     [set_sql_config in line None (index starts from 0)] stdout> areaburntbywildfiresbyweek.csv
+2024-05-03 15:25:39 +0000   30852 execution.flow     INFO     [set_sql_config in line None (index starts from 0)] stdout> netflix_titles.csv
+2024-05-03 15:25:39 +0000   30852 execution.flow     INFO     Node set_sql_config completes.

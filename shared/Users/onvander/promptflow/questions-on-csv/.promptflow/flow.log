@@ -1,0 +1,11 @@
+2024-05-07 14:55:32 +0000  845103 execution.flow     INFO     Start executing nodes in thread pool mode.
+2024-05-07 14:55:32 +0000  845103 execution.flow     INFO     Start to run 4 nodes with concurrency level 16.
+2024-05-07 14:55:32 +0000  845103 execution.flow     INFO     Executing node set_sql_config. node run id: a9a48536-5ee6-4189-aedb-5025e5775cad_set_sql_config_0
+2024-05-07 14:55:32 +0000  845103 execution.flow     INFO     [set_sql_config in line 0 (index starts from 0)] stdout> areaburntbywildfiresbyweek.csv
+2024-05-07 14:55:33 +0000  845103 execution.flow     INFO     [set_sql_config in line 0 (index starts from 0)] stdout> netflix_titles.csv
+2024-05-07 14:55:34 +0000  845103 execution.flow     INFO     Node set_sql_config completes.
+2024-05-07 14:55:34 +0000  845103 execution.flow     INFO     Executing node llm_node_4adr. node run id: a9a48536-5ee6-4189-aedb-5025e5775cad_llm_node_4adr_0
+2024-05-07 14:55:34 +0000  845103 execution.flow     INFO     Node llm_node_4adr completes.
+2024-05-07 14:55:34 +0000  845103 execution.flow     INFO     Executing node get_records. node run id: a9a48536-5ee6-4189-aedb-5025e5775cad_get_records_0
+2024-05-07 14:55:35 +0000  845103 execution.flow     INFO     [get_records in line 0 (index starts from 0)] stdout> areaburntbywildfiresbyweek.csv
+2024-05-07 14:56:41 +0000  845103 execution.flow     INFO     [get_records in line 0 (index starts from 0)] stdout> netflix_titles.csv

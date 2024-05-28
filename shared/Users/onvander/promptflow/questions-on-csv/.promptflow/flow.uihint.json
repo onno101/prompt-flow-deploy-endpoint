@@ -1,0 +1,28 @@
+{
+  "nodes": {
+    "set_sql_config": {
+      "variant_0": {
+        "inputs": {},
+        "inputsValue": {}
+      }
+    },
+    "generate_sql_query": {
+      "variant_0": {
+        "inputs": {},
+        "inputsValue": {}
+      }
+    },
+    "get_records": {
+      "variant_0": {
+        "inputs": {},
+        "inputsValue": {}
+      }
+    },
+    "final_response": {
+      "variant_2": {
+        "inputs": {},
+        "inputsValue": {}
+      }
+    }
+  }
+}

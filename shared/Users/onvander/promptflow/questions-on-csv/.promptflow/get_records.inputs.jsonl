@@ -1,0 +1,1 @@
+{"llm_node_4adr.output":"SELECT Entity\nFROM df\nWHERE _burnt_by_wildfires_in_2023 = (SELECT MAX(_burnt_by_wildfires_in_2023) FROM df)"}

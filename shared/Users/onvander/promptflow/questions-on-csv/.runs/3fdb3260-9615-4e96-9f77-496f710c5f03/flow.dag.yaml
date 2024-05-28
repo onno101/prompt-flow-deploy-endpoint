@@ -1,0 +1,65 @@
+inputs:
+  question:
+    type: string
+    default: Get me the the product IDs of plastic for eriks
+    is_chat_input: false
+outputs:
+  response:
+    type: string
+    reference: ${final_response.output}
+    evaluation_only: false
+    is_chat_output: false
+nodes:
+- name: set_sql_config
+  type: python
+  source:
+    type: code
+    path: SetSQLConfig.py
+  inputs: {}
+  aggregation: false
+- name: generate_sql_query
+  type: llm
+  source:
+    type: code
+    path: file_ninja_ofzo
+  inputs:
+    deployment_name: "gpt-35-turbo"
+    temperature: 0
+    top_p: 1
+    presence_penalty: 0
+    frequency_penalty: 0
+    question: "${inputs.question}"
+    table_info: "${set_sql_config.output}"
+  api: chat
+  provider: AzureOpenAI
+  connection: ai-onvanderai826500209528_aoai
+  module: promptflow.tools.aoai
+  aggregation: false
+- name: get_records
+  type: python
+  source:
+    type: code
+    path: get_records.py
+  inputs:
+    query: "${generate_sql_query.output}"
+  aggregation: false
+- name: final_response
+  type: llm
+  source:
+    type: code
+    path: final_response.jinja2
+  inputs:
+    deployment_name: "gpt-35-turbo"
+    temperature: 0.3
+    top_p: 1
+    presence_penalty: 0
+    frequency_penalty: 0
+    finals_response: "${get_records.output}"
+    initial_question: "${inputs.question}"
+  api: chat
+  provider: AzureOpenAI
+  connection: ai-onvanderai826500209528_aoai
+  module: promptflow.tools.aoai
+  aggregation: false
+environment:
+  python_requirements_txt: requirements.txt

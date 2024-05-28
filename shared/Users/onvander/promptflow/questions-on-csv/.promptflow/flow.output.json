@@ -1,0 +1,3 @@
+{
+  "response": "Here is the requested table:\n\n| Product ID | Material | Supplier    | Customer |\n|------------|----------|-------------|----------|\n| 12456      | Plastic  | ABC Company | Eriks    |\n| 13457      | Plastic  | XYZ Corp.   | Eriks    |\n| 14578      | Plastic  | ABC Company | Eriks    |\n\nThe product IDs of plastic for Eriks are: 12456, 13457, 14578.\n\nExplanation: The table shows all the records that match the filtering criteria for plastic products that Eriks is buying from any supplier. The resulting table is then used to extract the product IDs that were requested."
+}

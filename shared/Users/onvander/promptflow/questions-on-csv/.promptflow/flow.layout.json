@@ -1,0 +1,49 @@
+{
+  "orientation": "Vertical",
+  "nodeLayouts": {
+    "inputs": {
+      "x": 290,
+      "y": 42,
+      "index": -1
+    },
+    "outputs": {
+      "x": 385,
+      "y": 578,
+      "index": -1
+    },
+    "set_sql_config": {
+      "x": 470,
+      "y": 42,
+      "height": 75,
+      "index": 0
+    },
+    "generate_sql_query": {
+      "x": 460,
+      "y": 176,
+      "height": 75,
+      "index": 1
+    },
+    "get_records": {
+      "x": 460,
+      "y": 310,
+      "height": 75,
+      "index": 2
+    },
+    "final_response": {
+      "x": 305,
+      "y": 444,
+      "height": 75,
+      "index": 3
+    }
+  },
+  "viewport": {
+    "transformMatrix": [
+      0.7950109649122807,
+      0,
+      0,
+      0.7950109649122807,
+      -84.047128777755,
+      129.042663681298
+    ]
+  }
+}

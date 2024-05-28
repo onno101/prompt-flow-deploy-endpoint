@@ -1,0 +1,22 @@
+name: Deploy Prompt Flow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy Prompt Flow
+        run: |
+          az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+          az account set --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          az extension add --name ml
+          az ml online-endpoint create --file setup/endpoint.yml --resource-group rg-onvanderai --workspace-name onno-ai-application --set public_network_access=disabled
+          az ml online-deployment create --file setup/deployment.yml --resource-group rg-onvanderai --workspace-name onno-ai-application

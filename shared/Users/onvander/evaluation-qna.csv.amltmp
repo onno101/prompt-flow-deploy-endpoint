@@ -1,0 +1,10 @@
+question,answer,context
+What country had the most wildfires in 2023?,Australia,"From our data file on wildfire, Australia had the most wilfires"
+How many season does TV Show the office has?,9 seasons,There are 9 Seasons of the Office in our data on Netflix titles
+In what movies has Johnny Depp played?,Table: | | title | |---:|:-----------------------------------------------| | 0 | The Tourist | | 1 | What's Eating Gilbert Grape | | 2 | Rango | | 3 | Hugo | | 4 | Blow | | 5 | Charlie and the Chocolate Factory | | 6 | Donnie Brasco | | 7 | Fear and Loathing in Las Vegas | | 8 | Sweeney Todd: The Demon Barber of Fleet Street | | 9 | The Imaginarium of Doctor Parnassus | | 10 | THE RUM DIARY | | 11 | Transcendence | | 12 | Tusk | | 13 | Yoga Hosers | Johnny Depp has played in the following movies listed in the table above.,Johnny Depp has played in many movies in our data on Netflix titles
+What is the most expensive Peugeot car? Give its name and the price,peugeot 604sl with a price of 18150.,In our car dataset the peugeot 604sl is the most expensive peugeot with a price of 18150. 
+What cars have a twelve cilinder?,Ferrari 812 Superfast |\n| 1 | Ferrari GTC4Lusso |\n| 2 | Lamborghini Aventador |\n| 3 | Lamborghini Huracan |\n| 4 | Aston Martin DB11 |\n| 5 | Bentley Continental |\n| 6 | Rolls Royce Wraith,Many cars in our car dataset have a twelve cilinder engine
+Give me the most expensive car,"Quick Regal Sport Coupe (turbo) with a price of $45,400","The most expensive car in the dataset is the Quick Regal Sport Coupe (turbo) with a price of $45,400"
+I want a BMW sedan with a max price of 30.000 ,mw 320i | 16430 |\n| 1 | bmw 320i | 16925 |\n| 2 | bmw x1 | 20970 |\n| 3 | bmw x3 | 21105 |\n| 4 | bmw z4 | 24565,There are many BMW cars in the cars dataset with a max price of 30.000
+I want to watch a movie from 1993. List me some suggestions,Table of 1993 movies:\n\n| | title | director | release_year | rating | duration | listed_in | description |\n|-,There are many movies from 1993 in the netflix titles dataset
+What country has country code MKD?,North Macedonia,North macedonia is abbreviated with country code MKD

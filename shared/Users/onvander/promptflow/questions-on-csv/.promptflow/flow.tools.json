@@ -1,0 +1,87 @@
+{
+  "package": {},
+  "code": {
+    "SetSQLConfig.py": {
+      "type": "python",
+      "source": "SetSQLConfig.py",
+      "function": "my_python_tool"
+    },
+    "get_records.py": {
+      "type": "python",
+      "inputs": {
+        "query": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Retrieve records from CSV files stored in an Azure Blob Storage container.\n\nArgs:\n    query (str): SQL query to apply to the CSV files.\n\nReturns:\n    str: Result of the SQL query as a string.",
+      "source": "get_records.py",
+      "function": "my_python_tool"
+    },
+    "final_response.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "finals_response": {
+          "type": [
+            "string"
+          ]
+        },
+        "initial_question": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "final_response.jinja2"
+    },
+    "file_ninja_ofzo": {
+      "type": "llm",
+      "inputs": {
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "table_info": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "file_ninja_ofzo"
+    },
+    "final_response__variant_1.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "finals_response": {
+          "type": [
+            "string"
+          ]
+        },
+        "initial_question": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "final_response__variant_1.jinja2"
+    },
+    "final_response__variant_2.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "initial_question": {
+          "type": [
+            "string"
+          ]
+        },
+        "finals_response": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "final_response__variant_2.jinja2"
+    }
+  }
+}
